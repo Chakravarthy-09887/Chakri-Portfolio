@@ -1,0 +1,52 @@
+===================================================================
+                         A CHAKRAVARTHY
+===================================================================
+Email: ambatichakri@gmail.com | Phone: +91 8122585863
+Location: Tamil Nadu, India
+Role: Aspiring Software Developer | AI & Data Science Student | Digital Marketing Enthusiast
+
+-------------------------------------------------------------------
+ACADEMIC BACKGROUND
+-------------------------------------------------------------------
+Bachelor of Technology (B.Tech) - Artificial Intelligence & Data Science
+Location: Tamil Nadu, India
+Academic Score: CGPA 8.6
+
+-------------------------------------------------------------------
+WORK EXPERIENCE
+-------------------------------------------------------------------
+Digital Marketing Intern | A&D Waves Technologies
+Responsibilities:
+- Managed SEO Optimization and search ranking improvements
+- Formulated Social Media Campaigns and content marketing strategies
+- Conducted Digital Branding, Marketing Research, and Data Analytics
+
+-------------------------------------------------------------------
+TECHNICAL SKILLS & CORE COMPETENCIES
+-------------------------------------------------------------------
+- Programming Languages: Python, Java, C, HTML, CSS, JavaScript
+- AI & Data Science: Machine Learning, Artificial Intelligence, Data Analysis, Algorithms, Software Development
+- Web Development: Responsive Design, Frontend Development, Backend Basics
+- Digital Marketing: SEO, Social Media Marketing, Content Marketing, Analytics
+- Soft Skills: Communication, Problem Solving, Teamwork, Leadership, Quick Learning
+
+-------------------------------------------------------------------
+FEATURED PROJECTS
+-------------------------------------------------------------------
+1. AI Chatbot - Conversational NLP AI Assistant
+2. Student Management System - Academic record & grade management app
+3. Portfolio Website - Modern dark futuristic glassmorphism portfolio
+4. AI Data Analysis Dashboard - Statistical metric visualizer & EDA engine
+5. Machine Learning Prediction System - Predictive forecasting ML model
+6. Digital Marketing Analytics Dashboard - SEO & campaign KPI tracker
+
+-------------------------------------------------------------------
+CERTIFICATIONS
+-------------------------------------------------------------------
+- Python Programming Certification
+- Artificial Intelligence Fundamentals
+- Machine Learning Basics
+- Web Development Certification
+- Digital Marketing Certification
+- Data Analytics Certification
+===================================================================

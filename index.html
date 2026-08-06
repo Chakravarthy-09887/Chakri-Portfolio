@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of A Chakravarthy - Aspiring Software Developer, AI & Data Science Student, Digital Marketing Enthusiast in Tamil Nadu, India.">
+  <meta name="keywords" content="A Chakravarthy, AI Engineer, Software Developer, Data Science, Portfolio, Tamil Nadu">
+  <title>A Chakravarthy | AI & Data Science Portfolio</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/glass.css">
+  <link rel="stylesheet" href="./src/css/cursor.css">
+  <link rel="stylesheet" href="./src/css/animations.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <div class="ai-icon-pulse"><i class="fa-solid fa-brain"></i></div>
+        <span class="gradient-text">A CHAKRAVARTHY</span>
+      </div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Space Canvas & Background Blobs -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Custom Animated Neon Glowing Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+  <canvas id="cursor-canvas"></canvas>
+
+  <!-- Sticky Glass Navbar -->
+  <nav class="glass-nav">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo interactive-hover">
+        <div class="logo-badge"><i class="fa-solid fa-microchip"></i></div>
+        <span>A CHAKRAVARTHY</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      
+      <!-- Left Content -->
+      <div class="hero-left reveal-slide-left">
+        <div class="hero-greeting">
+          <span class="badge-pill"><i class="fa-solid fa-sparkles"></i> Welcome to my Space</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <br>
+          <span class="gradient-text">A Chakravarthy</span>
+        </h1>
+
+        <div class="hero-typing-wrap">
+          <span id="typing-text"></span><span class="typing-cursor"></span>
+        </div>
+
+        <p class="role-statement">
+          <strong>Aspiring Software Developer | AI & Data Science Student | Digital Marketing Enthusiast</strong><br>
+          Build intelligent software, solve real-world problems, and continuously learn emerging technologies.
+        </p>
+
+        <div class="hero-actions">
+          <a href="./public/assets/A_Chakravarthy_Resume.pdf" download="A_Chakravarthy_Resume.pdf" class="btn-glow magnetic">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn-glass magnetic">
+            <i class="fa-solid fa-rocket"></i> View Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side 3D Interactive Portrait & Tech Badges -->
+      <div class="hero-right reveal-slide-right">
+        <div class="hero-portrait-container">
+          <div class="portrait-glow-ring"></div>
+          
+          <div class="portrait-frame">
+            <img src="./public/assets/profile1.jpg" alt="A Chakravarthy Professional Photo" class="portrait-img">
+          </div>
+
+          <!-- Floating Code / Tech Badges -->
+          <div class="floating-badge badge-top-left floating-elem-1">
+            <i class="fa-brands fa-python" style="color: #38bdf8;"></i> Python & AI
+          </div>
+          
+          <div class="floating-badge badge-top-right floating-elem-2">
+            <i class="fa-solid fa-database" style="color: #c084fc;"></i> Data Science
+          </div>
+
+          <div class="floating-badge badge-bottom-right floating-elem-3">
+            <i class="fa-solid fa-code" style="color: #34d399;"></i> Full Stack
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Passionate about AI, algorithms, data analytics & software engineering</p>
+      </div>
+
+      <div class="about-grid">
+        
+        <div class="about-img-frame glass-card reveal-zoom">
+          <img src="./public/assets/profile2.jpg" alt="A Chakravarthy" class="about-img">
+        </div>
+
+        <div class="about-content reveal-slide-right">
+          <p class="about-bio">
+            I am currently pursuing my <strong>Bachelor of Technology in Artificial Intelligence and Data Science</strong> in Tamil Nadu, India. I am passionate about software engineering, artificial intelligence, data analysis, algorithms, and full-stack web development. I enjoy transforming innovative ideas into practical digital solutions while continuously improving my technical and problem-solving skills. I believe in lifelong learning, collaboration, and building impactful technology that creates real value.
+          </p>
+
+          <!-- Animated Statistic Cards Grid -->
+          <div class="stats-grid">
+            <div class="glass-card stat-card interactive-hover">
+              <div class="stat-number"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="stat-label">B.Tech AI & DS</div>
+            </div>
+
+            <div class="glass-card stat-card interactive-hover">
+              <div class="stat-number gradient-text">8.6</div>
+              <div class="stat-label">CGPA Score</div>
+            </div>
+
+            <div class="glass-card stat-card interactive-hover">
+              <div class="stat-number"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="stat-label">Digital Marketing Internship Completed</div>
+            </div>
+
+            <div class="glass-card stat-card interactive-hover">
+              <div class="stat-number"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="stat-label">Software Development Enthusiast</div>
+            </div>
+
+            <div class="glass-card stat-card interactive-hover">
+              <div class="stat-number"><i class="fa-solid fa-infinity"></i></div>
+              <div class="stat-label">Continuous Learner</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Education <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">Academic foundations in Artificial Intelligence and Data Science</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-fade">
+          <div class="timeline-dot"></div>
+          <div class="glass-card">
+            <div style="font-size: 2rem; color: var(--accent); margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.3rem;">Bachelor of Technology</h3>
+            <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-weight: 500;">Artificial Intelligence and Data Science</h4>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.8rem;">
+              <span class="badge-pill"><i class="fa-solid fa-star"></i> CGPA: 8.6</span>
+              <span class="tag-item"><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Core expertise across programming, AI models, software dev & digital marketing</p>
+      </div>
+
+      <div class="skills-container">
+        
+        <!-- Programming -->
+        <div class="glass-card reveal-fade delay-1">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-code" style="color: var(--primary);"></i> Programming
+          </h3>
+          <div class="skill-tags-flex">
+            <span class="tag-item">Python</span>
+            <span class="tag-item">Java</span>
+            <span class="tag-item">C</span>
+            <span class="tag-item">HTML</span>
+            <span class="tag-item">CSS</span>
+            <span class="tag-item">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- AI & Data Science -->
+        <div class="glass-card reveal-fade delay-2">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-brain" style="color: var(--secondary);"></i> AI & Data Science
+          </h3>
+          <div class="skill-tags-flex">
+            <span class="tag-item">Machine Learning</span>
+            <span class="tag-item">Artificial Intelligence</span>
+            <span class="tag-item">Data Analysis</span>
+            <span class="tag-item">Algorithms</span>
+          </div>
+        </div>
+
+        <!-- Software Development -->
+        <div class="glass-card reveal-fade delay-3">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-laptop-code" style="color: var(--accent);"></i> Software Development
+          </h3>
+          <div class="skill-tags-flex">
+            <span class="tag-item">Web Development</span>
+            <span class="tag-item">Responsive Design</span>
+            <span class="tag-item">Frontend Development</span>
+            <span class="tag-item">Backend Basics</span>
+          </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="glass-card reveal-fade delay-4">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-bullhorn" style="color: #f43f5e;"></i> Digital Marketing
+          </h3>
+          <div class="skill-tags-flex">
+            <span class="tag-item">SEO Optimization</span>
+            <span class="tag-item">Social Media Marketing</span>
+            <span class="tag-item">Content Marketing</span>
+            <span class="tag-item">Analytics</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="glass-card reveal-fade delay-5">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-users" style="color: #10b981;"></i> Soft Skills
+          </h3>
+          <div class="skill-tags-flex">
+            <span class="tag-item">Communication</span>
+            <span class="tag-item">Problem Solving</span>
+            <span class="tag-item">Teamwork</span>
+            <span class="tag-item">Leadership</span>
+            <span class="tag-item">Quick Learning</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">Professional internship experience driving real digital growth</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-fade">
+          <div class="timeline-dot"></div>
+          <div class="glass-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.5rem;">
+              <h3 style="font-size: 1.35rem;">Digital Marketing Intern</h3>
+              <span class="badge-pill"><i class="fa-solid fa-briefcase"></i> Internship</span>
+            </div>
+            <h4 style="color: var(--accent); margin-bottom: 1rem; font-weight: 500;">A&D Waves Technologies</h4>
+            
+            <p style="color: var(--text-sub); font-size: 0.95rem; margin-bottom: 1rem; font-weight: 600;">Key Responsibilities:</p>
+            <div class="skill-tags-flex">
+              <span class="tag-item">SEO Optimization</span>
+              <span class="tag-item">Social Media Campaigns</span>
+              <span class="tag-item">Content Strategy</span>
+              <span class="tag-item">Analytics</span>
+              <span class="tag-item">Digital Branding</span>
+              <span class="tag-item">Marketing Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Intelligent software solutions, web systems & machine learning models</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="glass-card project-card reveal-fade delay-1">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+            <span class="badge-pill">AI & NLP</span>
+          </div>
+          <h3 class="project-title">AI Chatbot</h3>
+          <p class="project-desc">Intelligent conversational AI system built for natural query resolution, context processing, and automated responses.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn-glow btn-project-demo" data-project="AI Chatbot" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Live Demo</button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card reveal-fade delay-2">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <span class="badge-pill">Full Stack</span>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">Comprehensive web application designed to streamline student records management, grades tracking, and academic data.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn-glow btn-project-demo" data-project="Student Management System" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Live Demo</button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card reveal-fade delay-3">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+            <span class="badge-pill">Web & UI</span>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">Modern futuristic personal portfolio with glassmorphism UI, smooth scroll, interactive canvas, and glowing cursor animation.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn-glow btn-project-demo" data-project="Portfolio Website" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Live Demo</button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card reveal-fade delay-1">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <span class="badge-pill">Data Analytics</span>
+          </div>
+          <h3 class="project-title">AI Data Analysis Dashboard</h3>
+          <p class="project-desc">Interactive dashboard platform automating statistical insights, data visualization charts, and exploratory data analysis.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn-glow btn-project-demo" data-project="AI Data Analysis Dashboard" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Live Demo</button>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="glass-card project-card reveal-fade delay-2">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <span class="badge-pill">Machine Learning</span>
+          </div>
+          <h3 class="project-title">Machine Learning Prediction System</h3>
+          <p class="project-desc">Predictive model pipeline implementing classification and regression techniques for high-accuracy pattern forecasting.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn-glow btn-project-demo" data-project="Machine Learning Prediction System" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Live Demo</button>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="glass-card project-card reveal-fade delay-3">
+          <div class="project-card-header">
+            <div class="project-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <span class="badge-pill">Marketing Analytics</span>
+          </div>
+          <h3 class="project-title">Digital Marketing Analytics Dashboard</h3>
+          <p class="project-desc">Real-time performance analytics tool aggregating campaign metrics, audience growth, SEO ranking, and ROI statistics.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn-glow btn-project-demo" data-project="Digital Marketing Analytics Dashboard" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-eye"></i> Live Demo</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="cert-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Certifications & <span class="gradient-text">Credentials</span></h2>
+        <p class="section-subtitle">Verified technical certifications across programming, AI & digital marketing</p>
+      </div>
+
+      <div class="cert-grid">
+        
+        <div class="glass-card cert-card reveal-fade delay-1">
+          <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Python Programming Certification</h4>
+            <p style="color: var(--text-sub); font-size: 0.85rem;">Core Syntax, OOP & Data Structures</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal-fade delay-2">
+          <div class="cert-badge"><i class="fa-solid fa-brain"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Artificial Intelligence Fundamentals</h4>
+            <p style="color: var(--text-sub); font-size: 0.85rem;">AI Models & Neural Concepts</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal-fade delay-3">
+          <div class="cert-badge"><i class="fa-solid fa-microchip"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Machine Learning Basics</h4>
+            <p style="color: var(--text-sub); font-size: 0.85rem;">Supervised & Unsupervised Learning</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal-fade delay-1">
+          <div class="cert-badge"><i class="fa-solid fa-laptop-code"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Web Development Certification</h4>
+            <p style="color: var(--text-sub); font-size: 0.85rem;">HTML5, CSS3, JS & Modern Responsive UI</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal-fade delay-2">
+          <div class="cert-badge"><i class="fa-solid fa-bullhorn"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Digital Marketing Certification</h4>
+            <p style="color: var(--text-sub); font-size: 0.85rem;">SEO, Content Strategy & Campaigns</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card reveal-fade delay-3">
+          <div class="cert-badge"><i class="fa-solid fa-chart-line"></i></div>
+          <div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.3rem;">Data Analytics Certification</h4>
+            <p style="color: var(--text-sub); font-size: 0.85rem;">Data Insights & Visualizations</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Achievement Counters Section -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+        <p class="section-subtitle">Milestones achieved during academic and professional pursuit</p>
+      </div>
+
+      <div class="achieve-grid">
+        
+        <div class="glass-card achieve-card reveal-zoom delay-1">
+          <div class="counter-num counter-val" data-target="8.6">0.0</div>
+          <div style="color: var(--text-sub); font-weight: 500;">Academic CGPA</div>
+        </div>
+
+        <div class="glass-card achieve-card reveal-zoom delay-2">
+          <div class="counter-num counter-val" data-target="1">0</div>
+          <div style="color: var(--text-sub); font-weight: 500;">Internship Completed</div>
+        </div>
+
+        <div class="glass-card achieve-card reveal-zoom delay-3">
+          <div class="counter-num counter-val" data-target="6" data-suffix="+">0</div>
+          <div style="color: var(--text-sub); font-weight: 500;">Projects Developed</div>
+        </div>
+
+        <div class="glass-card achieve-card reveal-zoom delay-4">
+          <div class="counter-num counter-val" data-target="5" data-suffix="+">0</div>
+          <div style="color: var(--text-sub); font-weight: 500;">Technical Skill Domains</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      
+      <div class="section-header-wrapper reveal-fade">
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Feel free to reach out for collaborations, projects, or inquiries</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Card Info -->
+        <div class="glass-card reveal-slide-left">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Contact Information</h3>
+          <p style="color: var(--text-sub); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            I am always open to discussing new opportunities in AI engineering, software development, and data science.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <i class="fa-solid fa-user"></i>
+              <span><strong>Name:</strong> A Chakravarthy</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>Location:</strong> Tamil Nadu, India</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span><strong>Email:</strong> <a href="mailto:ambatichakri@gmail.com" style="color: var(--accent); text-decoration: none;">ambatichakri@gmail.com</a></span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span><strong>Phone:</strong> <a href="tel:+918122585863" style="color: var(--accent); text-decoration: none;">+91 8122585863</a></span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="https://in.linkedin.com/in/chakravarthy-a-5b2596a3" target="_blank" class="btn-glass" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">
+              <i class="fa-brands fa-linkedin" style="color: #38bdf8;"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glass" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="./public/assets/A_Chakravarthy_Resume.pdf" download="A_Chakravarthy_Resume.pdf" class="btn-glow" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">
+              <i class="fa-solid fa-file-pdf"></i> Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Glass Contact Form -->
+        <div class="glass-card reveal-slide-right">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="form-email" placeholder="Your Email Address" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="form-subject" placeholder="Subject" required>
+            </div>
+
+            <div class="form-group">
+              <textarea id="form-message" rows="5" placeholder="Your Message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-glow magnetic" style="justify-content: center; width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Project Live Demo Modal Window -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modal-title" style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-main);">Project Preview</h3>
+      <p id="modal-desc" style="color: var(--text-sub); font-size: 1rem; line-height: 1.7; margin-bottom: 1.8rem;"></p>
+      <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+        <a href="https://github.com/Chakravarthy-09887" target="_blank" class="btn-glow" style="padding: 0.6rem 1.5rem;"><i class="fa-brands fa-github"></i> View Repository</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal Futuristic Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="https://in.linkedin.com/in/chakravarthy-a-5b2596a3" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Chakravarthy-09887" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:ambatichakri@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      
+      <p style="color: var(--text-sub); font-size: 0.95rem;">
+        Designed and Developed by <span class="gradient-text" style="font-weight: 600;">A Chakravarthy</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Entry Script -->
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
