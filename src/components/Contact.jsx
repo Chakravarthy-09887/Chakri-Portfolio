@@ -8,11 +8,25 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    setTimeout(() => {
+    try {
+      await fetch('https://formsubmit.co/ajax/ambatichakri@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          _subject: formData.subject || 'Portfolio Inquiry for A Chakravarthy',
+          message: formData.message
+        })
+      });
+
       setLoading(false);
       setSubmitted(true);
       
@@ -29,7 +43,11 @@ const Contact = () => {
       }
 
       setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 1000);
+    } catch (error) {
+      setLoading(false);
+      setSubmitted(true);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    }
   };
 
   return (
